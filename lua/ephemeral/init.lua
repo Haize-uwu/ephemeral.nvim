@@ -10,8 +10,8 @@
 local ephemeral = {}
 
 local if_nil = vim.F.if_nil
-local utils = require("doom-one.utils")
-local colors = require("doom-one.colors")
+local utils = require("ephemeral.utils")
+local colors = require("ephemeral.colors")
 
 local config = {
 	ui = {
