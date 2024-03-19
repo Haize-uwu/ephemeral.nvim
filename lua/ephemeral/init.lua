@@ -233,10 +233,10 @@ ephemeral.set_colorscheme = function()
 		"Identifier",
 		{ fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.36) }
 	)
-	set_hl("Property", { fg = palette.magenta })
-	set_hl("Function", { fg = palette.magenta })
+	set_hl("Property", { fg = palette.teal })
+	set_hl("Function", { fg = palette.teal })
 	set_hl("FunctionBuiltin", {
-		fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.2),
+		fg = dark_theme and utils.lighten(palette.teal, 0.4) or utils.darken(palette.magenta, 0.2),
 		bold = true,
 	})
 	set_hl("KeywordFunction", { fg = dark_theme and palette.yellow or palette.red, bold = true })
