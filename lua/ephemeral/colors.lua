@@ -36,6 +36,12 @@ local colors = {
       cyan = "#46d9ff",
       dark_cyan = "#5699af",
       
+      -- ephemeral colors
+      pink = "#c574dd",
+      light_pink = "#dd73c1",
+      dark_grey = "#3e3c5e",
+      light_grey = "#56687e",
+      alt_blue = "#87DFEB",
   },
 }
 

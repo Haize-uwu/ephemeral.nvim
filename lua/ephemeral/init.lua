@@ -15,7 +15,7 @@ local colors = require("ephemeral.colors")
 
 local config = {
 	ui = {
-		cursor_coloring = if_nil(vim.g.ephemeral_cursor_coloring, false),
+		cursor_coloring = if_nil(vim.g.ephemeral_cursor_coloring, true),
 		terminal_colors = if_nil(vim.g.ephemeral_terminal_colors, true),
 		italic_comments = if_nil(vim.g.ephemeral_italic_comments, false),
 		enable_treesitter = if_nil(vim.g.ephemeral_enable_treesitter, true),
@@ -130,7 +130,7 @@ ephemeral.set_colorscheme = function()
 	set_hl("MatchParen", { fg = palette.red, bold = true })
 	set_hl("Whitespace", { fg = palette.grey })
 
-	set_hl("Highlight", { bg = palette.bg_alt })
+	set_hl("Highlight", { bg = palette.alt_blue })
 	set_hl("HighlightSubtle", { link = "Highlight" })
 
 	set_hl("Question", { fg = palette.green, bold = true })
@@ -181,8 +181,8 @@ ephemeral.set_colorscheme = function()
 	set_hl("URL", { link = "Link" })
 	set_hl("Underlined", { fg = utils.mix(palette.blue, palette.cyan, 0.5), underline = true })
 
-	set_hl("Comment", { fg = dark_theme and palette.base5 or palette.base4, italic = config.ui.italic_comments })
-	set_hl("CommentBold", { fg = dark_theme and palette.base5 or palette.base4, bold = true })
+	set_hl("Comment", { fg = dark_theme and palette.light_grey or palette.base4, italic = config.ui.italic_comments })
+	set_hl("CommentBold", { fg = dark_theme and palette.light_grey or palette.base4, bold = true })
 	set_hl("SpecialComment", { fg = dark_theme and palette.base7 or palette.base5, bold = true })
 
 	set_hl("Macro", { fg = palette.violet })
@@ -193,21 +193,21 @@ ephemeral.set_colorscheme = function()
 
 	set_hl("Label", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Repeat", { fg = dark_theme and palette.blue or palette.red })
-	set_hl("Keyword", { fg = dark_theme and palette.blue or palette.red })
+	set_hl("Keyword", { fg = dark_theme and palette.yellow or palette.red })
 	set_hl("Operator", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Delimiter", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Statement", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Exception", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Conditional", { fg = dark_theme and palette.blue or palette.red })
 
-	set_hl("Variable", { fg = utils.darken(palette.magenta, 0.36) })
+	set_hl("Variable", { fg = utils.darken(palette.light_pink, 0.36) })
 	set_hl("VariableBuiltin", { fg = palette.magenta, bold = true })
 	set_hl("Constant", { fg = palette.violet, bold = true })
 
-	set_hl("Number", { fg = palette.orange })
+	set_hl("Number", { fg = palette.green })
 	set_hl("Float", { link = "Number" })
-	set_hl("Boolean", { fg = palette.orange, bold = true })
-	set_hl("Enum", { fg = palette.orange })
+	set_hl("Boolean", { fg = palette.green, bold = true })
+	set_hl("Enum", { fg = palette.green })
 
 	set_hl("Character", { fg = palette.violet, bold = true })
 	set_hl(
@@ -239,11 +239,11 @@ ephemeral.set_colorscheme = function()
 		fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.2),
 		bold = true,
 	})
-	set_hl("KeywordFunction", { fg = dark_theme and palette.blue or palette.red, bold = true })
-	set_hl("Method", { fg = dark_theme and palette.violet or palette.cyan })
+	set_hl("KeywordFunction", { fg = dark_theme and palette.yellow or palette.red, bold = true })
+	set_hl("Method", { fg = dark_theme and palette.alt_blue or palette.cyan })
 
-	set_hl("Type", { fg = palette.yellow })
-	set_hl("Typedef", { fg = dark_theme and palette.blue or palette.red })
+	set_hl("Type", { fg = palette.cyan })
+	set_hl("Typedef", { fg = dark_theme and palette.cyan or palette.red })
 	set_hl("TypeBuiltin", { fg = palette.yellow, bold = true })
 	set_hl("Class", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("StorageClass", { fg = dark_theme and palette.blue or palette.red })
