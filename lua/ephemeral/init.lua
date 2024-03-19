@@ -201,7 +201,7 @@ ephemeral.set_colorscheme = function()
 	set_hl("Conditional", { fg = dark_theme and palette.blue or palette.red })
 
 	set_hl("Variable", { fg = utils.darken(palette.light_pink, 0.36) })
-	set_hl("VariableBuiltin", { fg = palette.magenta, bold = true })
+	set_hl("VariableBuiltin", { fg = palette.magenta, bold = false })
 	set_hl("Constant", { fg = palette.violet, bold = true })
 
 	set_hl("Number", { fg = palette.green })
