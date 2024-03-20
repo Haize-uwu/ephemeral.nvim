@@ -1,6 +1,6 @@
 tested install on LazyVim
 # colorscheme.lua
-```python
+```lua
 return{
   -- add theme
     {"Haize-uwu/ephemeral.nvim"},
