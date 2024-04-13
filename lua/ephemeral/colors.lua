@@ -7,7 +7,7 @@
 
 local colors = {
 	dark = {
-		bg = "#323f4e",
+		bg = "#5E3E66",
 		fg = "#f8f8f2",
 
 		bg_alt = "#28323e",
@@ -35,9 +35,10 @@ local colors = {
 		violet = "#a9a1e1",
 		cyan = "#46d9ff",
 		dark_cyan = "#5699af",
-		white = "#fffffe",
+		white = "#EAB2C0",
 
 		-- ephemeral colors
+		ln_num = "F8ADC0",
 		pink = "#c574dd",
 		light_pink = "#dd73c1",
 		dark_grey = "#3e3c5e",
