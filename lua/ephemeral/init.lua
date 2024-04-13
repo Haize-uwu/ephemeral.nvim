@@ -181,7 +181,7 @@ ephemeral.set_colorscheme = function()
 	set_hl("URL", { link = "Link" })
 	set_hl("Underlined", { fg = utils.mix(palette.blue, palette.cyan, 0.5), underline = true })
 
-	set_hl("Comment", { fg = dark_theme and palette.white or palette.base4, italic = config.ui.italic_comments })
+	set_hl("Comment", { fg = dark_theme and palette.grey or palette.base4, italic = config.ui.italic_comments })
 	set_hl("CommentBold", { fg = dark_theme and palette.grey or palette.base4, bold = true })
 	set_hl("SpecialComment", { fg = dark_theme and palette.base7 or palette.base5, bold = true })
 
@@ -194,11 +194,11 @@ ephemeral.set_colorscheme = function()
 	set_hl("Label", { fg = dark_theme and palette.light_pink or palette.red })
 	set_hl("Repeat", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Keyword", { fg = dark_theme and palette.yellow or palette.red })
-	set_hl("Operator", { fg = dark_theme and palette.orange or palette.red })
+	set_hl("Operator", { fg = dark_theme and palette.yellow or palette.red })
 	set_hl("Delimiter", { fg = dark_theme and palette.green or palette.red })
 	set_hl("Statement", { fg = dark_theme and palette.pink or palette.red })
 	set_hl("Exception", { fg = dark_theme and palette.blue or palette.red })
-	set_hl("Conditional", { fg = dark_theme and palette.white or palette.red })
+	set_hl("Conditional", { fg = dark_theme and palette.magenta or palette.red })
 
 	set_hl("Variable", { fg = utils.darken(palette.light_pink, 0.36) })
 	set_hl("VariableBuiltin", { fg = palette.magenta, bold = false })
@@ -214,7 +214,7 @@ ephemeral.set_colorscheme = function()
 		"SpecialChar",
 		{ fg = dark_theme and utils.darken(palette.violet, 0.15) or utils.lighten(palette.violet, 0.26), bold = true }
 	)
-	set_hl("String", { fg = palette.orange })
+	set_hl("String", { fg = palette.yellow })
 	set_hl("StringDelimiter", { link = "String" })
 
 	set_hl("Special", { fg = palette.violet })
