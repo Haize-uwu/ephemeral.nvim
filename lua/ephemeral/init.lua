@@ -22,7 +22,7 @@ local config = {
 		diagnostics_text_color = if_nil(vim.g.ephemeral_diagnostics_text_color, false),
 		transparent_background = if_nil(vim.g.ephemeral_transparent_background, true),
 		pumblend = {
-			enable = if_nil(vim.g.ephemeral_pumblend_enable, true),
+			enable = if_nil(vim.g.ephemeral_pumblend_enable, false),
 			transparency_amount = if_nil(vim.g.ephemeral_pumblend_transparency, 80),
 		},
 	},
@@ -37,7 +37,7 @@ local config = {
 		whichkey = if_nil(vim.g.ephemeral_plugin_whichkey, true),
 		indent_blankline = if_nil(vim.g.ephemeral_plugin_indent_blankline, true),
 		vim_illuminate = if_nil(vim.g.ephemeral_plugin_vim_illuminate, true),
-		lspsaga = if_nil(vim.g.ephemeral_plugin_lspsaga, true),
+		lspsaga = if_nil(vim.g.ephemeral_plugin_lspsaga, false),
 	},
 }
 
