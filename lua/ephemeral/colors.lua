@@ -35,6 +35,7 @@ local colors = {
       violet = "#a9a1e1",
       cyan = "#46d9ff",
       dark_cyan = "#5699af",
+      white = "#f8e9e6"
       
       -- ephemeral colors
       pink = "#c574dd",
