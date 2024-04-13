@@ -2,8 +2,8 @@
 -- Name:            ephemeral
 -- Maintainer:      https://github.com/Haize-uwu
 -- License:         The MIT License (MIT)
--- Based On:        https://github.com/romgrk/doom-one.vim and 
---                  https://github.com/doomemacs/themes ephemeral theme 
+-- Based On:        https://github.com/romgrk/doom-one.vim and
+--                  https://github.com/doomemacs/themes ephemeral theme
 
 -- Helpers {{{
 
@@ -296,15 +296,15 @@ ephemeral.set_colorscheme = function()
 	--- LSP
 	------------
 	if config.ui.diagnostics_text_color then
-	  set_hl("ErrorMsgUnderline", { fg = palette.red, underline = true })
-	  set_hl("WarningMsgUnderline", { fg = palette.yellow, underline = true })
-	  set_hl("MoreMsgUnderline", { fg = palette.blue, underline = true })
-	  set_hl("MsgUnderline", { fg = palette.green, underline = true })
+		set_hl("ErrorMsgUnderline", { fg = palette.red, underline = true })
+		set_hl("WarningMsgUnderline", { fg = palette.yellow, underline = true })
+		set_hl("MoreMsgUnderline", { fg = palette.blue, underline = true })
+		set_hl("MsgUnderline", { fg = palette.green, underline = true })
 	else
-	  set_hl("ErrorMsgUnderline", { sp = palette.red, underline = true })
-	  set_hl("WarningMsgUnderline", { sp = palette.yellow, underline = true })
-	  set_hl("MoreMsgUnderline", { sp = palette.blue, underline = true })
-	  set_hl("MsgUnderline", { sp = palette.green, underline = true })
+		set_hl("ErrorMsgUnderline", { sp = palette.red, underline = true })
+		set_hl("WarningMsgUnderline", { sp = palette.yellow, underline = true })
+		set_hl("MoreMsgUnderline", { sp = palette.blue, underline = true })
+		set_hl("MsgUnderline", { sp = palette.green, underline = true })
 	end
 
 	set_hl("LspHighlight", { bg = palette.bg_alt, bold = true })
@@ -468,14 +468,14 @@ ephemeral.set_colorscheme = function()
 		set_hl("Green", { fg = palette.green })
 		set_hl("Brown", { fg = palette.orange })
 
-    -- Headlines support
-    -- NOTE: requires custom highlight groups in headlines setup!
-    set_hl("Headline1", { bg = utils.blend(utils.get_hl("NeorgHeading1Title", "foreground"), palette.bg, 0.18) })
-    set_hl("Headline2", { bg = utils.blend(utils.get_hl("NeorgHeading2Title", "foreground"), palette.bg, 0.18) })
-    set_hl("Headline3", { bg = utils.blend(utils.get_hl("NeorgHeading3Title", "foreground"), palette.bg, 0.18) })
-    set_hl("Headline4", { bg = utils.blend(utils.get_hl("NeorgHeading4Title", "foreground"), palette.bg, 0.18) })
-    set_hl("Headline5", { bg = utils.blend(utils.get_hl("NeorgHeading5Title", "foreground"), palette.bg, 0.18) })
-    set_hl("Headline6", { bg = utils.blend(utils.get_hl("NeorgHeading6Title", "foreground"), palette.bg, 0.18) })
+		-- Headlines support
+		-- NOTE: requires custom highlight groups in headlines setup!
+		set_hl("Headline1", { bg = utils.blend(utils.get_hl("NeorgHeading1Title", "foreground"), palette.bg, 0.18) })
+		set_hl("Headline2", { bg = utils.blend(utils.get_hl("NeorgHeading2Title", "foreground"), palette.bg, 0.18) })
+		set_hl("Headline3", { bg = utils.blend(utils.get_hl("NeorgHeading3Title", "foreground"), palette.bg, 0.18) })
+		set_hl("Headline4", { bg = utils.blend(utils.get_hl("NeorgHeading4Title", "foreground"), palette.bg, 0.18) })
+		set_hl("Headline5", { bg = utils.blend(utils.get_hl("NeorgHeading5Title", "foreground"), palette.bg, 0.18) })
+		set_hl("Headline6", { bg = utils.blend(utils.get_hl("NeorgHeading6Title", "foreground"), palette.bg, 0.18) })
 	end
 
 	if config.plugins.vim_illuminate then
