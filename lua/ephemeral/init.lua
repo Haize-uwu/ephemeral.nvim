@@ -195,7 +195,7 @@ ephemeral.set_colorscheme = function()
 	set_hl("Repeat", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Keyword", { fg = dark_theme and palette.yellow or palette.red })
 	set_hl("Operator", { fg = dark_theme and palette.yellow or palette.red })
-	set_hl("Delimiter", { fg = dark_theme and palette.green or palette.red })
+	set_hl("Delimiter", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Statement", { fg = dark_theme and palette.pink or palette.red })
 	set_hl("Exception", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Conditional", { fg = dark_theme and palette.magenta or palette.red })
@@ -214,7 +214,7 @@ ephemeral.set_colorscheme = function()
 		"SpecialChar",
 		{ fg = dark_theme and utils.darken(palette.violet, 0.15) or utils.lighten(palette.violet, 0.26), bold = true }
 	)
-	set_hl("String", { fg = palette.yellow })
+	set_hl("String", { fg = palette.light_pink })
 	set_hl("StringDelimiter", { link = "String" })
 
 	set_hl("Special", { fg = palette.violet })
