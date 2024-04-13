@@ -78,8 +78,8 @@ ephemeral.set_colorscheme = function()
 	set_hl("Visual", { bg = palette.dark_blue })
 	set_hl("VisualBold", { bg = palette.dark_blue, bold = true })
 
-	set_hl("LineNr", { bg = "bg", fg = palette.grey })
-	set_hl("Cursor", { bg = palette.blue })
+	set_hl("LineNr", { bg = "bg", fg = palette.white })
+	set_hl("Cursor", { bg = palette.yellow })
 	set_hl("CursorLine", { bg = palette.bg_alt })
 	set_hl("CursorLineNr", { bg = palette.bg_alt, fg = "fg" })
 	set_hl("CursorColumn", { bg = palette.bg_alt })
@@ -100,7 +100,7 @@ ephemeral.set_colorscheme = function()
 
 	set_hl("WildMenu", { bg = palette.dark_blue, fg = "fg" })
 	set_hl("Separator", { fg = palette.fg_alt })
-	set_hl("VertSplit", { bg = "bg", fg = palette.grey })
+	set_hl("VertSplit", { bg = "bg", fg = palette.white })
 
 	set_hl("TabLine", { bg = palette.bg_alt, fg = palette.base7, bold = true })
 	set_hl("TabLineSel", { bg = "bg", fg = palette.blue, bold = true })
@@ -119,7 +119,7 @@ ephemeral.set_colorscheme = function()
 
 	--- Search, Highlight, Conceal, Messages
 	----------------------------------------
-	set_hl("Search", { bg = palette.dark_blue, fg = "fg" })
+	set_hl("Search", { bg = palette.pink, fg = "fg" })
 	set_hl("Substitute", { fg = palette.red, bold = true, strikethrough = true })
 	set_hl("IncSearch", { bg = palette.yellow, fg = "bg", bold = true })
 	set_hl("IncSearchCursor", { reverse = true })
@@ -130,7 +130,7 @@ ephemeral.set_colorscheme = function()
 	set_hl("MatchParen", { fg = palette.red, bold = true })
 	set_hl("Whitespace", { fg = palette.grey })
 
-	set_hl("Highlight", { bg = palette.alt_blue })
+	set_hl("Highlight", { bg = palette.teal })
 	set_hl("HighlightSubtle", { link = "Highlight" })
 
 	set_hl("Question", { fg = palette.green, bold = true })
@@ -148,7 +148,7 @@ ephemeral.set_colorscheme = function()
 		Normal = palette.fg,
 		Info = palette.blue,
 		Success = palette.green,
-		Warning = palette.yellow,
+		Warning = palette.orange,
 		Debug = palette.yellow,
 		Error = palette.red,
 		Special = palette.violet,
@@ -181,8 +181,8 @@ ephemeral.set_colorscheme = function()
 	set_hl("URL", { link = "Link" })
 	set_hl("Underlined", { fg = utils.mix(palette.blue, palette.cyan, 0.5), underline = true })
 
-	set_hl("Comment", { fg = dark_theme and palette.light_grey or palette.base4, italic = config.ui.italic_comments })
-	set_hl("CommentBold", { fg = dark_theme and palette.light_grey or palette.base4, bold = true })
+	set_hl("Comment", { fg = dark_theme and palette.white or palette.base4, italic = config.ui.italic_comments })
+	set_hl("CommentBold", { fg = dark_theme and palette.grey or palette.base4, bold = true })
 	set_hl("SpecialComment", { fg = dark_theme and palette.base7 or palette.base5, bold = true })
 
 	set_hl("Macro", { fg = palette.violet })
@@ -191,14 +191,14 @@ ephemeral.set_colorscheme = function()
 	set_hl("PreProc", { fg = palette.violet, bold = true })
 	set_hl("PreCondit", { fg = palette.violet, bold = true })
 
-	set_hl("Label", { fg = dark_theme and palette.blue or palette.red })
+	set_hl("Label", { fg = dark_theme and palette.light_pink or palette.red })
 	set_hl("Repeat", { fg = dark_theme and palette.blue or palette.red })
 	set_hl("Keyword", { fg = dark_theme and palette.yellow or palette.red })
-	set_hl("Operator", { fg = dark_theme and palette.blue or palette.red })
-	set_hl("Delimiter", { fg = dark_theme and palette.blue or palette.red })
-	set_hl("Statement", { fg = dark_theme and palette.blue or palette.red })
+	set_hl("Operator", { fg = dark_theme and palette.orange or palette.red })
+	set_hl("Delimiter", { fg = dark_theme and palette.green or palette.red })
+	set_hl("Statement", { fg = dark_theme and palette.pink or palette.red })
 	set_hl("Exception", { fg = dark_theme and palette.blue or palette.red })
-	set_hl("Conditional", { fg = dark_theme and palette.blue or palette.red })
+	set_hl("Conditional", { fg = dark_theme and palette.white or palette.red })
 
 	set_hl("Variable", { fg = utils.darken(palette.light_pink, 0.36) })
 	set_hl("VariableBuiltin", { fg = palette.magenta, bold = false })
@@ -214,7 +214,7 @@ ephemeral.set_colorscheme = function()
 		"SpecialChar",
 		{ fg = dark_theme and utils.darken(palette.violet, 0.15) or utils.lighten(palette.violet, 0.26), bold = true }
 	)
-	set_hl("String", { fg = palette.green })
+	set_hl("String", { fg = palette.orange })
 	set_hl("StringDelimiter", { link = "String" })
 
 	set_hl("Special", { fg = palette.violet })
@@ -233,10 +233,10 @@ ephemeral.set_colorscheme = function()
 		"Identifier",
 		{ fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.36) }
 	)
-	set_hl("Property", { fg = palette.teal })
-	set_hl("Function", { fg = palette.teal })
+	set_hl("Property", { fg = palette.light_pink })
+	set_hl("Function", { fg = palette.light_pink })
 	set_hl("FunctionBuiltin", {
-		fg = dark_theme and utils.lighten(palette.teal, 0.4) or utils.darken(palette.magenta, 0.2),
+		fg = dark_theme and utils.lighten(palette.pink, 0.4) or utils.darken(palette.magenta, 0.2),
 		bold = true,
 	})
 	set_hl("KeywordFunction", { fg = dark_theme and palette.yellow or palette.red, bold = true })
@@ -245,9 +245,9 @@ ephemeral.set_colorscheme = function()
 	set_hl("Type", { fg = palette.cyan })
 	set_hl("Typedef", { fg = dark_theme and palette.cyan or palette.red })
 	set_hl("TypeBuiltin", { fg = palette.yellow, bold = true })
-	set_hl("Class", { fg = dark_theme and palette.blue or palette.red })
-	set_hl("StorageClass", { fg = dark_theme and palette.blue or palette.red })
-	set_hl("Structure", { fg = dark_theme and palette.blue or palette.red })
+	set_hl("Class", { fg = dark_theme and palette.orange or palette.red })
+	set_hl("StorageClass", { fg = dark_theme and palette.orange or palette.red })
+	set_hl("Structure", { fg = dark_theme and palette.orange or palette.red })
 
 	set_hl("Regexp", { fg = "#dd0093" })
 	set_hl("RegexpSpecial", { fg = "#a40073" })
