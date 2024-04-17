@@ -181,7 +181,7 @@ ephemeral.set_colorscheme = function()
 	set_hl("URL", { link = "Link" })
 	set_hl("Underlined", { fg = utils.mix(palette.blue, palette.cyan, 0.5), underline = true })
 
-	set_hl("Comment", { fg = dark_theme and palette."#56687e" or palette.base4, italic = config.ui.italic_comments })
+	set_hl("Comment", { fg = dark_theme and palette.light_grey or palette.base4, italic = config.ui.italic_comments })
 	set_hl("CommentBold", { fg = dark_theme and palette.grey or palette.base4, bold = true })
 	set_hl("SpecialComment", { fg = dark_theme and palette.base7 or palette.base5, bold = true })
 
