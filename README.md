@@ -13,7 +13,7 @@ return{
   }
 }
 ```
-**Consider forking for any changes to improve the theme**
+**Consider contributing to improve the theme**
 
 TODO:
 - keyword colours are not correcly displaying across different languages
