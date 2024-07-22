@@ -38,7 +38,7 @@ local config = {
 		indent_blankline = if_nil(vim.g.ephemeral_plugin_indent_blankline, true),
 		vim_illuminate = if_nil(vim.g.ephemeral_plugin_vim_illuminate, true),
 		lspsaga = if_nil(vim.g.ephemeral_plugin_lspsaga, false),
-		lazygit = if_nil(vim.g.ephemeral_plugin_lazygit,true),
+		lazygit = if_nil(vim.g.ephemeral_plugin_lazygit,false),
 	},
 }
 
